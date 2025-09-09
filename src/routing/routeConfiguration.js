@@ -27,7 +27,7 @@ const PasswordChangePage = loadable(() => import(/* webpackChunkName: "PasswordC
 const PasswordRecoveryPage = loadable(() => import(/* webpackChunkName: "PasswordRecoveryPage" */ '../containers/PasswordRecoveryPage/PasswordRecoveryPage'));
 const PasswordResetPage = loadable(() => import(/* webpackChunkName: "PasswordResetPage" */ '../containers/PasswordResetPage/PasswordResetPage'));
 const PaymentMethodsPage = loadable(() => import(/* webpackChunkName: "PaymentMethodsPage" */ '../containers/PaymentMethodsPage/PaymentMethodsPage'));
-const DeleteAccountPage = loadable(() => import(/* webpackChunkName: "DeleteAccountPage" */ '../containers/DeleteAccountPage/DeleteAccountPage'));
+const ManageAccountPage = loadable(() => import(/* webpackChunkName: "ManageAccountPage" */ '../containers/ManageAccountPage/ManageAccountPage'));
 const PrivacyPolicyPage = loadable(() => import(/* webpackChunkName: "PrivacyPolicyPage" */ '../containers/PrivacyPolicyPage/PrivacyPolicyPage'));
 const ProfilePage = loadable(() => import(/* webpackChunkName: "ProfilePage" */ '../containers/ProfilePage/ProfilePage'));
 const ProfileSettingsPage = loadable(() => import(/* webpackChunkName: "ProfileSettingsPage" */ '../containers/ProfileSettingsPage/ProfileSettingsPage'));
@@ -46,7 +46,7 @@ export const ACCOUNT_SETTINGS_PAGES = [
   'PasswordChangePage',
   'StripePayoutPage',
   'PaymentMethodsPage',
-  'DeleteAccountPage'
+  'ManageAccountPage'
 ];
 
 // https://en.wikipedia.org/wiki/Universally_unique_identifier#Nil_UUID
@@ -331,11 +331,11 @@ const routeConfiguration = (layoutConfig, accessControlConfig) => {
       loadData: pageDataLoadingAPI.PaymentMethodsPage.loadData,
     },
     {
-      path: '/account/delete-account',
-      name: 'DeleteAccountPage',
+      path: '/account/manage',
+      name: 'ManageAccountPage',
       auth: true,
       authPage: 'LoginPage',
-      component: DeleteAccountPage,
+      component: ManageAccountPage,
     },
     {
       path: '/terms-of-service',
