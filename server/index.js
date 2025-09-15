@@ -33,7 +33,6 @@ const bodyParser = require('body-parser');
 const enforceSsl = require('express-enforces-ssl');
 const path = require('path');
 const passport = require('passport');
-
 const auth = require('./auth');
 const apiRouter = require('./apiRouter');
 const wellKnownRouter = require('./wellKnownRouter');
