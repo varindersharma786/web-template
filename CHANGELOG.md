@@ -15,13 +15,24 @@ way to update this template, but currently, we follow a pattern:
 ## Upcoming version 2025-XX-XX
 
 - [add] Add currently available translations for DE, ES, FR.
+  [#664](https://github.com/sharetribe/web-template/pull/664)
+
+## [v8.8.0] 2025-09-11
+
+- [add] Add ability to sort user inbox messages
+  [#656](https://github.com/sharetribe/web-template/pull/656)
+- [add] Update one Marketplace text (to be aligned with the corresponding copy in Email texts).
+  [#661](https://github.com/sharetribe/web-template/pull/661)
+- [add] Add currently available translations for DE, ES, FR.
   [#658](https://github.com/sharetribe/web-template/pull/658)
 - [add] Add accessibility improvements to components related to
     - search pages
     - listing page
     - listing editing pages
     - transaction page
+  
   [#649](https://github.com/sharetribe/web-template/pull/649)
+
 - [change] Remove pickup fee line-item from the order breakdown.
   [#655](https://github.com/sharetribe/web-template/pull/655)
 - [add] Update EditListingPage README.md to describe the data gathered and updated.
@@ -35,6 +46,8 @@ way to update this template, but currently, we follow a pattern:
 
 - [add] render potential errors in EditListingStylePanel.
   [#647](https://github.com/sharetribe/web-template/pull/647)
+
+  [v8.8.0]: https://github.com/sharetribe/web-template/compare/v8.7.0...v8.8.0
 
 ## [v8.7.0] 2025-07-30
 
